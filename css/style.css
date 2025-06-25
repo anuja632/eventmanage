@@ -258,9 +258,9 @@ padding: 0;
     color: #787a7b;
     font-size: 1rem;
   }
-p{
+p, li{
   text-align: justify;
-  font-size: 19px;
+  font-size: 18px;
 }
 
 
@@ -454,7 +454,7 @@ p{
 }
 
 .feature-one__title a:hover {
-  color: #fdbb2d;
+  color: #D92234;
 }
 
 .feature-one__text {
@@ -633,7 +633,7 @@ p{
 }
 
 .event-item .content .blog-meta li i {
-  color: #FFC857; /* Accent gold */
+  color: #D92234; /* Accent gold */
 }
 
 .event-item .content h4 {
@@ -664,9 +664,9 @@ p{
 }
 
 .theme-btn:hover {
-  background: #FFC857;
+  background: #D92234;
   color: #002855;
-  border-color: #FFC857;
+  border-color: #D92234;
 }
 
 /* EVENT HOVER */
@@ -683,7 +683,7 @@ p{
 }
 
 .event-item:hover .blog-meta li i {
-  color: #FFC857;
+  color: #D92234;
 }
 
 .event-item:hover .theme-btn {
@@ -944,7 +944,7 @@ p{
       top: -30px;
       left: 50%;
       transform: translateX(-50%);
-      background: #FF4500;
+      background: #D92234;
       color: white;
       font-size: 14px;
       padding: 10px;
@@ -1003,6 +1003,200 @@ p{
 .custom-gap li + li {
   margin-top: 10px; /* or any value you prefer */
 }
+    .buy-ticket {
+      background-color: #D92234;
+      clip-path: polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%);
+      padding: 30px;
+      color:white;
+      font-weight: bold;
+      width: 160px;
+      height: 160px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 10;
+    }
+    .buy-ticket i {
+      /* background: #000; */
+      color: #fff;
+      padding: 8px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+      width: 50px;
+      height: 50px;
+
+    }
+    .conference-stats h4 {
+      font-size: 36px;
+      font-weight: bold;
+    }
+    .conference-stats p {
+      margin: 0;
+    }
+    .btn-attend {
+      background-color: #D92234;
+      font-weight: bold;
+      border: none;
+      color:white;
+      padding: 10px 25px;
+    }
+    .btn-attend:hover {
+      background-color:#D92234;
+    }
+
+    .goal-section {
+  padding: 60px 0;
+  background-color: #fff;
+}
+
+.goal-title {
+  color: #062665;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.goal-subtext {
+  color: #D92234;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.goal-box {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.goal-icon {
+  background-color: #D92234;
+  color: white;
+  font-size: 24px;
+  padding: 16px;
+  border-radius: 10px;
+  margin-right: 15px;
+}
+
+.goal-heading {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.goal-text {
+  color: #555;
+}
+
+/* Mask Styles */
+.goal-thumb1-1 {
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+}
+.image-anim::before {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 0%;
+    left: 50%;
+    top: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: translate(-50%, -50%) rotate(-45deg);
+    z-index: 1;
+}
+.bg-mask {
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-size: cover;
+  -webkit-mask-size: cover;
+  mask-position: center;
+  -webkit-mask-position: center;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.img-bg-shape {
+  background-color: #f2f2f2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.thumb {
+  position: relative;
+  z-index: 2;
+}
+
+.thumb img {
+  width: 100%;
+  height: 650px;
+  object-fit: cover;
+  display: block;
+}
+
+    .feature-box {
+      background: #fff;
+      border-radius: 15px;
+      padding: 30px;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease;
+      height: 100%;
+    }
+
+    .feature-icon {
+      width: 60px;
+      height: 60px;
+      background: #ffc107;
+      color: #000;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      margin: 0 auto 20px auto;
+    }
+
+    .feature-box h5 {
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+
+    .feature-box a {
+      text-decoration: none;
+      font-weight: 600;
+      color: #000;
+    }
+
+    .feature-box a i {
+      margin-left: 5px;
+    }
+
+    .section-heading {
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .section-subtitle {
+      display: block;
+      text-align: center;
+      font-size: 14px;
+      color: #777;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+    }
+
     @media (max-width: 768px) {
       .logo-container { flex: 0 0 200px; }
     }
