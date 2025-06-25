@@ -3,16 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Fixed Images, Rotating Dots</title>
+  <title>Event Management</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Open+Sans&family=Lato&family=Noto+Sans&display=swap" rel="stylesheet">
+
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Owl Carousel + Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
 </head>
 <body>
+  <div class="main">
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark container mt-3">
+  <nav class="navbar navbar-expand-lg navbar-dark container ">
     <a class="navbar-brand" href="#">
       <img src="https://via.placeholder.com/30/ffffff/000?text=E" alt="Logo" class="img-fluid">
     </a>
@@ -67,7 +74,7 @@
   </nav>
 
   <!-- hero section -->
-<div class="container-fluid py-5">
+<div class="container-fluid py-5" id ="aa">
   <div class="row align-items-center g-4">
     
     <!-- Hero Text -->
@@ -112,6 +119,8 @@
    </div>
   </div>
 </div>
+  </div>
+
 <!-- about section  -->
 <section class="about-section">
   <div class="container-fluid">
@@ -146,7 +155,7 @@
 
       <!-- Right Text Column -->
       <div class="col-md-7">
-        <p class="text-uppercase text-muted mb-2"><i class="fa-solid fa-bolt"></i> About Summit</p>
+        <p class="text-uppercase mb-2"><i class="fa-solid fa-bolt"></i> About Summit </p>
         <h2 class="fw-bold mb-3">What is the Technology Forum Conference?</h2>
         <p>
           The Technology Forum Conference brings together thought leaders, innovators, and tech enthusiasts to discuss the latest developments in AI, cybersecurity, blockchain, cloud computing, and more.
@@ -189,7 +198,7 @@
             <div class="container">
                 <div class="section-title text-center">
                     <div class="section-title__tagline-box">
-                        <!-- <span class="section-title__tagline"><span>//</span> Our Features <span></span></span> -->
+                        <span class="section-title__tagline">Our Features <span>  </span></span>
                     </div>
                     <h2 class="section-title__title mb-5" style="color: #062665;">Feature for your <span>Event</span></h2>
                 </div>
@@ -316,9 +325,9 @@
   </div>
 </section>
 <!--events section -->
-<section class="our-event-area bgc-black pt-5 rpy-100 rel z-1">
+<section class="our-event-area bgc-black py-5 rpy-100 rel z-1" style="background-color:	#EAE6E1;">
   <div class="container">
-    <div class="row pb-30 align-items-end justify-content-between">
+    <div class="row pb-30  justify-content-between">
       <div class="col-xl-6 col-lg-7" data-aos="fade-left" data-aos-duration="1500" data-aos-offset="50">
         <div class="section-title mb-30">
           <span class="subtitle mb-25 rmb-20">Join Our Event</span>
@@ -384,6 +393,7 @@
     </div>
   </div>
 </section>
+<!-- teamsection -->
 <div class="team10-section-area sp3">
 			<div class="container">
 				<div class="row">
@@ -452,7 +462,7 @@
 								</div>
 							</div>
 
-							<div class="col-lg-4 col-md-6">
+							<div class="col-lg-4 col-md-6  mt-3">
 								<div class="team10-widget-boxarea2">
 									<div class="img5 image-anime">
 										<img src="https://img.freepik.com/free-photo/happy-event-manager-banquet-hall_23-2148085332.jpg?uid=R189150807&ga=GA1.1.931881242.1742301016&semt=ais_hybrid&w=740" alt="">
@@ -465,7 +475,7 @@
 								</div>
 							</div>
 
-							<div class="col-lg-4 col-md-6">
+							<div class="col-lg-4 col-md-6  mt-3">
 								<div class="team10-widget-boxarea2">
 									<div class="img5 image-anime">
 										<img src="https://img.freepik.com/free-photo/content-successful-male-manager-using-tablet-looking-camera_1262-14194.jpg?uid=R189150807&ga=GA1.1.931881242.1742301016&semt=ais_hybrid&w=740" alt="">
@@ -478,7 +488,7 @@
 								</div>
 							</div>
 
-							<div class="col-lg-4 col-md-6">
+							<div class="col-lg-4 col-md-6 mt-3">
 								<div class="team10-widget-boxarea2">
 									<div class="img5 image-anime">
 										<img src="https://img.freepik.com/free-photo/indian-businessman-with-his-white-car_496169-2889.jpg?uid=R189150807&ga=GA1.1.931881242.1742301016&semt=ais_hybrid&w=740" alt="">
@@ -495,63 +505,355 @@
 				</div>
 			</div>
 		</div>
+    <!-- upcoming event -->
 <section class="py-5">
   <div class="container">
     <div class="row align-items-center">
       <!-- Left side: steps -->
       <div class="col-md-6">
-<div class="position-relative timeline-container">
-  <div class="timeline-line"></div>
 
-  <div class="step-box mb-4 active">
+<div class="timeline-container" id="timeline">
+  <div class="timeline-line">
+    <div class="timeline-progress" id="timelineProgress"></div>
+  </div>
+
+  <div class="step-box" data-step="1" onclick="setActiveStep(1)">
     <h5>Registration Form Fill Up</h5>
     <p>It all starts with understanding your unique needs...</p>
   </div>
 
-  <div class="step-box mb-4">
+  <div class="step-box" data-step="2" onclick="setActiveStep(2)">
     <h5>Invitation Card Download</h5>
-    <p>It all starts with understanding your unique needs...</p>
+    <p>We’ll provide you the invitation card once registration ..</p>
   </div>
 
-  <div class="step-box">
+  <div class="step-box" data-step="3" onclick="setActiveStep(3)">
     <h5>Join And Enjoy The Event</h5>
-    <p>It all starts with understanding your unique needs...</p>
+    <p>Join us at the venue and enjoy an unforgettable experience...</p>
   </div>
 </div>
+
 
       </div>
 
       <!-- Right side: images -->
       <div class="col-md-6 text-center">
-        <div class="image-group d-flex justify-content-center flex-wrap">
-          <img src="https://via.placeholder.com/180" alt="Main Speaker" width="180" height="180">
-          <img src="https://via.placeholder.com/100" alt="Microphone" width="100" height="100">
-          <img src="https://via.placeholder.com/120" alt="Audience" width="120" height="120">
-        </div>
-        <div class="mt-3">
-          <img src="https://via.placeholder.com/180x50?text=2K%2B+Attendees" alt="2K+" class="img-fluid">
+        <div class="about-main-wrapper">
+          <!-- Main Image -->
+          <img src="https://img.freepik.com/free-photo/business-man-posing_23-2148018652.jpg?uid=R189150807&ga=GA1.1.931881242.1742301016&semt=ais_hybrid&w=740"
+               class="about-main-img"
+               alt="Main Person">
+
+          <!-- Top Mic -->
+          <img src="https://img.freepik.com/free-photo/portrait-good-looking-smiling-arabic-man-suit-attractive-young-businessman-with-beard-moustache-looking-camera-portrait-international-beauty-concept_74855-21597.jpg"
+               class="about-circle-img about-circle-lg mic1"
+               alt="Mic">
+
+          <!-- Bottom Mic -->
+          <img src="https://img.freepik.com/free-photo/happy-confident-young-professional-posing-outside_1262-21131.jpg"
+               class="about-circle-img about-circle-lg mic2"
+               alt="Mic1">
+
+          <!-- Group People -->
+          <div class="group-bottom-left d-flex align-items-center gap-2">
+            <img src="https://eventify-html-demo.vercel.app/assets/img/all-images/about/about-img9.png" class="about-circle-img" alt="Person 1">
+            <img src="https://eventify-html-demo.vercel.app/assets/img/all-images/about/about-img9.png" class="about-circle-img" alt="Person 2">
+            <div class="bg-success text-white px-2 py-1 rounded small fw-bold">2K+</div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+
+<!-- Top Header -->
+<div class="header-wrap pt-5">
+  <h2>Our Partners</h2>
+  <div class="title-arrows">
+    <button class="carousel-arrow left"><i class="fas fa-chevron-left"></i></button>
+    <button class="carousel-arrow right"><i class="fas fa-chevron-right"></i></button>
+  </div>
+</div>
+
+<!-- Carousel -->
+<div class="carousel-container">
+  <div class="carousel-track" id="carouselTrack">
+    <!-- Logos -->
+    <div class="logo-container">
+      <img src="https://img.freepik.com/free-photo/people-taking-part-business-event_23-2149346666.jpg" alt="Event 1">
+      <div class="logo-tooltip">
+        <div class="gg">
+        <a class="arrow"><i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="text">
+          <p>Event 2024</p>
+          <a>Event Conferences</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Duplicate for infinite scroll -->
+    <div class="logo-container">
+      <img src="https://img.freepik.com/free-photo/people-taking-part-business-event_23-2149346666.jpg" alt="Event 2">
+      <div class="logo-tooltip">
+        <a class="arrow"><i class="fa-solid fa-arrow-right"></i></a>
+        <div class="text">
+          <p>Event 2024</p>
+          <a>Event Conferences</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Duplicate for infinite scroll -->
+    <div class="logo-container">
+      <img src="https://img.freepik.com/free-photo/people-taking-part-business-event_23-2149346666.jpg" alt="Event 2">
+      <div class="logo-tooltip">
+        <a class="arrow"><i class="fa-solid fa-arrow-right"></i></a>
+        <div class="text">
+          <p>Event 2024</p>
+          <a>Event Conferences</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Duplicate for infinite scroll -->
+    <div class="logo-container">
+      <img src="https://img.freepik.com/free-photo/people-taking-part-business-event_23-2149346666.jpg" alt="Event 2">
+      <div class="logo-tooltip">
+        <a class="arrow"><i class="fa-solid fa-arrow-right"></i></a>
+        <div class="text">
+          <p>Event 2024</p>
+          <a>Event Conferences</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Duplicate for infinite scroll -->
+    <div class="logo-container">
+      <img src="https://img.freepik.com/free-photo/people-taking-part-business-event_23-2149346666.jpg" alt="Event 2">
+      <div class="logo-tooltip">
+        <a class="arrow"><i class="fa-solid fa-arrow-right"></i></a>
+        <div class="text">
+          <p>Event 2024</p>
+          <a>Event Conferences</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Duplicate for infinite scroll -->
+    <div class="logo-container">
+      <img src="https://img.freepik.com/free-photo/people-taking-part-business-event_23-2149346666.jpg" alt="Event 2">
+      <div class="logo-tooltip">
+        <a class="arrow"><i class="fa-solid fa-arrow-right"></i></a>
+        <div class="text">
+          <p>Event 2024</p>
+          <a>Event Conferences</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Duplicate for infinite scroll -->
+    <div class="logo-container">
+      <img src="https://img.freepik.com/free-photo/people-taking-part-business-event_23-2149346666.jpg" alt="Event 2">
+      <div class="logo-tooltip">
+        <a class="arrow"><i class="fa-solid fa-arrow-right"></i></a>
+        <div class="text">
+          <p>Event 2024</p>
+          <a>Event Conferences</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- More logos as needed -->
+  </div>
+</div>
+<section class="py-5 bg-light text-center">
+  <div class="container">
+    <div class="mb-4">
+
+      <h2 class="fw-bold">Our Valued Sponsors &amp; Partners</h2>
+    </div>
+
+    <div class="row g-3 justify-content-center">
+      <!-- Partner 1 -->
+      <div class="col-6 col-md-3 col-lg-2">
+        <div class="partner-box">
+          <img src="https://eventify-html-demo.vercel.app/assets/img/elements/brand-img1.png" alt="Boltshift" class="img-fluid" />
+        </div>
+      </div>
+
+      <!-- Partner 2 -->
+      <div class="col-6 col-md-3 col-lg-2">
+        <div class="partner-box">
+          <img src="https://eventify-html-demo.vercel.app/assets/img/elements/brand-img2.png" alt="Lightbox" class="img-fluid" />
+        </div>
+      </div>
+
+      <!-- Partner 3 -->
+      <div class="col-6 col-md-3 col-lg-2">
+        <div class="partner-box">
+          <img src="https://eventify-html-demo.vercel.app/assets/img/elements/brand-img3.png" alt="GlobalBank" class="img-fluid" />
+        </div>
+      </div>
+
+      <!-- Partner 4 -->
+      <div class="col-6 col-md-3 col-lg-2">
+        <div class="partner-box">
+          <img src="https://eventify-html-demo.vercel.app/assets/img/elements/brand-img4.png" alt="FeatherDev" class="img-fluid" />
+        </div>
+      </div>
+      
+
+      <!-- Repeat for other partners using different logo URLs -->
+    </div>
+        <div class="row mt-2 g-3 justify-content-center">
+      <!-- Partner 1 -->
+      <div class="col-6 col-md-3 col-lg-2">
+        <div class="partner-box">
+          <img src="https://eventify-html-demo.vercel.app/assets/img/elements/brand-img1.png" alt="Boltshift" class="img-fluid" />
+        </div>
+      </div>
+
+      <!-- Partner 2 -->
+      <div class="col-6 col-md-3 col-lg-2">
+        <div class="partner-box">
+          <img src="https://eventify-html-demo.vercel.app/assets/img/elements/brand-img2.png" alt="Lightbox" class="img-fluid" />
+        </div>
+      </div>
+
+      <!-- Partner 3 -->
+      <div class="col-6 col-md-3 col-lg-2">
+        <div class="partner-box">
+          <img src="https://eventify-html-demo.vercel.app/assets/img/elements/brand-img3.png" alt="GlobalBank" class="img-fluid" />
+        </div>
+      </div>
+
+      <!-- Partner 4 -->
+      <div class="col-6 col-md-3 col-lg-2">
+        <div class="partner-box">
+          <img src="https://eventify-html-demo.vercel.app/assets/img/elements/brand-img4.png" alt="FeatherDev" class="img-fluid" />
+        </div>
+      </div>
+      
+
+      <!-- Repeat for other partners using different logo URLs -->
+    </div>
+        <div class="row mt-2 g-3 justify-content-center">
+      <!-- Partner 1 -->
+      <div class="col-6 col-md-3 col-lg-2">
+        <div class="partner-box">
+          <img src="https://eventify-html-demo.vercel.app/assets/img/elements/brand-img1.png" alt="Boltshift" class="img-fluid" />
+        </div>
+      </div>
+
+      <!-- Partner 2 -->
+      <div class="col-6 col-md-3 col-lg-2">
+        <div class="partner-box">
+          <img src="https://eventify-html-demo.vercel.app/assets/img/elements/brand-img2.png" alt="Lightbox" class="img-fluid" />
+        </div>
+      </div>
+
+      <!-- Partner 3 -->
+      <div class="col-6 col-md-3 col-lg-2">
+        <div class="partner-box">
+          <img src="https://eventify-html-demo.vercel.app/assets/img/elements/brand-img3.png" alt="GlobalBank" class="img-fluid" />
+        </div>
+      </div>
+
+      <!-- Partner 4 -->
+      <div class="col-6 col-md-3 col-lg-2">
+        <div class="partner-box">
+          <img src="https://eventify-html-demo.vercel.app/assets/img/elements/brand-img4.png" alt="FeatherDev" class="img-fluid" />
+        </div>
+      </div>
+      
+
+      <!-- Repeat for other partners using different logo URLs -->
+    </div>
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="text-white py-5">
+  <div class="container-fluid">
+    <div class="row gy-4">
+      
+      <!-- Column 1: Logo & Description -->
+      <div class="col-md-4">
+        <img src="your-logo.png" alt="Logo" style="max-width: 150px;">
+        <p class="mt-3 small" style="max-width:350px;">
+          We are committed to creating a platform where business leaders, innovators, and professionals can come together to exchange ideas
+        </p>
+        <div class="d-flex gap-3 mt-2">
+          <a href="#" class="text-white"><i class="fab fa-facebook-f fa-lg"></i></a>
+          <a href="#" class="text-white"><i class="fab fa-instagram fa-lg"></i></a>
+          <a href="#" class="text-white"><i class="fab fa-linkedin-in fa-lg"></i></a>
+          <a href="#" class="text-white"><i class="fab fa-pinterest-p fa-lg"></i></a>
+        </div>
+      </div>
+
+      <!-- Column 2: Quick Links -->
+      <div class="col-md-2">
+        <h5 class="fw-semibold">Quick Links</h5>
+        <ul class="list-unstyled   custom-gap small">
+          <li><a href="#" class="text-white text-decoration-none">About Us</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Our Blogs</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Event Listing</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Pricing Plan</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Contact Info -->
+      <div class="col-md-3">
+        <h5 class="fw-semibold">Contact Us</h5>
+        <ul class="list-unstyled  custom-gap small">
+          <li><i class="fas fa-phone me-2"></i> +1 123 456 7890</li>
+          <li><i class="fas fa-map-marker-alt me-2"></i> Secret Location In The UK</li>
+          <li><i class="fas fa-envelope me-2"></i> company@gmail.com</li>
+          <li><i class="fas fa-globe me-2"></i> company.com</li>
+        </ul>
+      </div>
+
+      <!-- Column 4: Event Gallery -->
+      <div class="col-md-3">
+        <h5 class="fw-semibold">Our Recent Event Gallery</h5>
+        <div class="row g-2">
+          <div class="col-4"><img src="https://eventify-html-demo.vercel.app/assets/img/all-images/footer/footer-img1.png" class="img-fluid rounded" alt="Gallery 1"></div>
+          <div class="col-4"><img src="https://eventify-html-demo.vercel.app/assets/img/all-images/footer/footer-img2.png" class="img-fluid rounded" alt="Gallery 2"></div>
+          <div class="col-4"><img src="https://eventify-html-demo.vercel.app/assets/img/all-images/footer/footer-img3.png" class="img-fluid rounded" alt="Gallery 3"></div>
+          <div class="col-4"><img src="https://eventify-html-demo.vercel.app/assets/img/all-images/footer/footer-img4.png" class="img-fluid rounded" alt="Gallery 4"></div>
+          <div class="col-4"><img src="https://eventify-html-demo.vercel.app/assets/img/all-images/footer/footer-img5.png" class="img-fluid rounded" alt="Gallery 5"></div>
+          <div class="col-4"><img src="https://eventify-html-demo.vercel.app/assets/img/all-images/footer/footer-img6.png" class="img-fluid rounded" alt="Gallery 6"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-center mt-4 pt-4 border-top border-white-25 small">
+      &copy; Copyright 2024 - <strong>Company</strong>. All Rights Reserved
+    </div>
+  </div>
+
+  <!-- Scroll to Top -->
+  <a href="#" class="btn btn-outline-light rounded-circle position-fixed bottom-0 end-0 m-4">
+    <i class="fas fa-arrow-up"></i>
+  </a>
+</footer>
+
+    <!-- jQuery (required by Owl Carousel) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Owl Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+<script src="js/script.js"></script>
+
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-  const boxes = document.querySelectorAll('.step-box');
-  const line = document.querySelector('.timeline-line');
-
-  boxes.forEach((box, index) => {
-    box.addEventListener('mouseenter', () => {
-      const percent = ((index + 1) / boxes.length) * 100;
-      line.style.background = `#062665`;
-    });
-
-    box.addEventListener('mouseleave', () => {
-      line.style.background = '#062665';
-    });
-  });
-</script>
-
 
 </body>
 </html>
