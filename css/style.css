@@ -25,7 +25,6 @@ padding: 0;
     top: 20px;
     text-align: center;
     font-size: 19px;
-      /* position: absolute; */
     }
 
     .navbar-brand {
@@ -37,6 +36,9 @@ padding: 0;
       font-size: 1.3rem;
     }
 
+    .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: #000;
+}
     .navbar-nav .nav-link {
       color: #000;
       margin: 0 10px;
@@ -44,52 +46,34 @@ padding: 0;
 #aa{
   margin-top: 100px;
 }
-    /* .navbar-nav .nav-link:hover,
-    .navbar-nav .nav-link.active {
-      color: #00ffae;
-    } */
+
 
     .social-icons a {
       color:  #000;
       margin-left: 15px;
     }
-/* 
-    .social-icons a:hover {
-      color: #00ffae;
-    } */
 
 
         .hero-section {
       padding: 60px;
       color:white;
-            /* color: #000; */
-           
-
-    }
+              }
 
     .hero-section h1 {
       font-size: 3.5rem;
       font-weight: bold;
             color:white;
-
-
-            /* color: #000; */
-
     }
 
     .hero-section p {
       font-size: 1.2rem;
       margin-bottom: 1rem;
             color:white;
-
-            /* color: #000; */
-
     }
 
     .event-date {
       font-weight: 600;
             color:white;
-      /* color: #000; */
     }
 
     .circle-container {
@@ -178,9 +162,7 @@ padding: 0;
     }
   .about-section {
     background:#FFF3F6;
-    /* color:white; */
     padding: 60px 60px 0px 0px;
-    /* background-color:#062665; */
   }
 
   .about-btn {
@@ -192,11 +174,7 @@ padding: 0;
     border-radius: 6px;
     transition: all 0.3s ease;
   }
-/* 
-  .about-btn:hover {
-    background: #00c77a;
-    color: #fff;
-  } */
+
 
   .about-main-wrapper {
     position: relative;
@@ -581,14 +559,13 @@ p, li{
   background-color: #062665;
   color:#fff;
 }
-
+/* 
 .feature-box:hover .icon-circle i {
   color: white;
-}
+} */
 
 .feature-box:hover h5,
-.feature-box:hover p,
-.feature-box:hover a {
+.feature-box:hover p{
   color: white;
 }/* EVENT ITEM STYLING */
 .event-item {
@@ -626,7 +603,7 @@ p, li{
     display: flex
 ;
     flex-wrap: wrap;
-    gap: 12%;
+    gap: 11%;
     font-size: 16px;
     color: #5E5E5E;
     list-style: none;
@@ -1197,6 +1174,278 @@ p, li{
       letter-spacing: 1px;
     }
 
+
+    
+.hero {
+  position: relative;
+  height: 100vh;
+  background-image: url('https://img.freepik.com/premium-photo/speaker-speaking-front-audience_1178606-16452.jpg?ga=GA1.1.494188671.1741346560&semt=ais_hybrid&w=740');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding-top: 80px; /* To avoid overlap with navbar */
+}
+
+    .hero h1 {
+      font-size: 4rem;
+      font-weight: bold;
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      margin-top: 1rem;
+    }
+
+    /* Two Column Section */
+    .content-section {
+      display: flex;
+      flex-wrap: wrap;
+      min-height: 600px;
+    }
+
+    .content-section .image {
+      flex: 1 1 50%;
+      background-image: url('https://valom-html-demo.vercel.app/assets/img/hero/hero-bg1-2.png');
+      background-size: cover;
+      background-position: center;
+      min-height: 400px;
+    }
+
+    .content-section .text {
+      flex: 1 1 50%;
+      background-color:  #062665;
+      color: #fff;
+      padding: 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .content-section .text h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .content-section .text p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      .content-section {
+        flex-direction: column;
+      }
+
+      .content-section .text, .content-section .image {
+        flex: 1 1 100%;
+      }
+    }
+           .team-member {
+      position: relative;
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      color: white;
+      display: flex;
+      align-items: flex-end;
+      padding: 20px;
+      margin-bottom: 20px;
+      transition: all 0.3s ease;
+    }
+
+    .team-member::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.867), transparent 60%);
+      z-index: 1;
+    }
+
+    .team-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .team-content h5 {
+      font-weight: bold;
+      color: #ff2d55;
+      margin: 0;
+    }
+
+    .team-content span {
+      font-size: 14px;
+      color: #eee;
+    }
+ /* .team-member img{
+    width:500px;
+ } */
+
+    .team-member:hover {
+      transform: scale(1.03);
+    }
+
+    .col-1-8 {
+      width: 25%;
+      padding: 0 10px;
+            background-size: cover;
+      background-position: center;
+    }
+
+    
+    /* Parallax Section */
+    .parallax-section {
+      position: relative;
+      height: 80vh;
+      overflow: hidden;
+    }
+
+    .parallax-bg {
+      position: absolute;
+      top: -150%;
+      left: 0;
+      width: 100%;
+      height: 150%;
+      background-image: url('https://valom-html-demo.vercel.app/assets/img/hero/hero-bg1-3.png');
+      background-size: cover;
+      background-position: center;
+      z-index: 0;
+      will-change: transform;
+      transition: transform 0.1s linear;
+    }
+
+    .parallax-content {
+      position: relative;
+      z-index: 1;
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.4); /* Optional overlay */
+    }
+
+    .parallax-content h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    .parallax-content p {
+      font-size: 1.2rem;
+      max-width: 600px;
+    }
+    
+.contact-wrapper {
+  display: flex;
+  max-width: 1000px;
+  margin: 50px auto;
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-section {
+  flex: 2;
+  padding: 40px;
+}
+
+.info-section {
+  flex: 1;
+  background: #e6f0fa;
+  padding: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.info-section img {
+  width: 100%;
+  /* max-width: 200px; */
+  border-radius: 10px;
+  margin: 0 auto 20px;
+}
+
+.info-block p {
+  margin: 10px 0;
+  font-size: 14px;
+  text-align: left;
+}
+
+.tagline {
+  color: #f97316;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+form {
+  margin-top: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 10px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+
+.checkbox input {
+  margin-right: 8px;
+}
+
+button {
+  background-color: #2563eb;
+  color: white;
+  padding: 12px;
+  width: 200px;
+  border: none;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #1e40af;
+}
+    @media (max-width: 992px) {
+      .col-1-8 {
+        width: 50%;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .col-1-8 {
+        width: 100%;
+      }
+    }
+    .navbar-wrapper {
+  width: 100%;
+  background-color: transparent; /* or rgba(0, 0, 0, 0.5) for semi-transparent */
+  z-index: 999;
+}
     @media (max-width: 768px) {
       .logo-container { flex: 0 0 200px; }
     }
@@ -1437,6 +1686,24 @@ p, li{
     background: #ffffff;
     color: #212529;
     padding: 60px 20px 0px 0px;
+}
+.event-item .content .blog-meta {
+    margin-bottom: 18px;
+    display: flex
+;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    font-size: 16px;
+    color: #5E5E5E;
+    list-style: none;
+}
+.text-area a {
+    font-size: 19px;
+    color: #222;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 10px;
 }
 }
 

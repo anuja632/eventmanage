@@ -734,3 +734,261 @@
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Event Management</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Open+Sans&family=Lato&family=Noto+Sans&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Owl Carousel + Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <style>
+       .team-member {
+      position: relative;
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      color: white;
+      display: flex;
+      align-items: flex-end;
+      padding: 20px;
+      margin-bottom: 20px;
+      transition: all 0.3s ease;
+    }
+
+    .team-member::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.867), transparent 60%);
+      z-index: 1;
+    }
+
+    .team-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .team-content h5 {
+      font-weight: bold;
+      color: #ff2d55;
+      margin: 0;
+    }
+
+    .team-content span {
+      font-size: 14px;
+      color: #eee;
+    }
+ /* .team-member img{
+    width:500px;
+ } */
+
+    .team-member:hover {
+      transform: scale(1.03);
+    }
+
+    .col-1-8 {
+      width: 25%;
+      padding: 0 10px;
+            background-size: cover;
+      background-position: center;
+    }
+
+    @media (max-width: 992px) {
+      .col-1-8 {
+        width: 50%;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .col-1-8 {
+        width: 100%;
+      }
+    }
+
+  </style>
+</head>
+<body>
+<!-- Hero Parallax Section -->
+<div class="hero" id="hero">
+
+  <!-- Navbar moved inside the hero -->
+   <div class="navbar-wrapper fixed-top">
+
+  <nav class="navbar navbar-expand-lg navbar-dark container fixed-top">
+    <a class="navbar-brand" href="index.html">
+      <img src="https://via.placeholder.com/30/ffffff/000?text=E" alt="Logo" class="img-fluid">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About Event</a></li>
+        <li class="nav-item"><a class="nav-link" href="speaker.html">Speaker</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Schedule</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Event Schedule</a></li>
+            <li><a class="dropdown-item" href="#">Event Details</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Blogs</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Blog</a></li>
+            <li><a class="dropdown-item" href="#">Blog Details</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Pages</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Memories</a></li>
+            <li><a class="dropdown-item" href="#">Pricing</a></li>
+            <li><a class="dropdown-item" href="#">FAQ</a></li>
+            <li><a class="dropdown-item" href="#">Contact</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="social-icons d-flex align-items-center">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+      </div>
+    </div>
+  </nav>
+
+  </div>
+  <!-- Hero content -->
+  <div>
+    <h1>SPEAKER GRID</h1>
+    <p>This is sample of page tagline and you can set it up using page option</p>
+  </div>
+</div>
+
+
+  <!-- Two Column Section -->
+  <section class="content-section">
+    <div class="image"></div>
+   <div class="text">
+  <h2>Shaping the Future of Technology</h2>
+  <p>
+    Technology is evolving at an unprecedented pace, transforming how we live, learn, and interact with the world around us. It’s not just about tools—it’s about unlocking new possibilities.
+  </p>
+  <p>
+    From artificial intelligence and clean energy to immersive experiences and smart systems, innovation is driving change across every aspect of life.
+  </p>
+  <p>
+    This space is dedicated to exploring groundbreaking ideas, sharing knowledge, and envisioning what's next. It's where creativity meets purpose—and where the future begins.
+  </p>
+    <p>
+    This event brings together pioneers from around the world to share insights, strategies, and breakthroughs that are accelerating digital evolution. Join us to explore what’s next, today.
+  </p>
+    <p>
+    At the forefront of this transformation are leaders, developers, and visionaries redefining how we connect, collaborate, and solve challenges. From AI to green tech, the tech industry is being reimagined every day.
+  </p>
+
+  <!-- <a href="#" class="btn btn-light mt-3">Discover More</a> -->
+</div>
+
+  </section>
+<div class="container-fluid py-5">
+  <div class="d-flex flex-wrap justify-content-start">
+    <!-- Repeat this block for each person -->
+    <div class="col-1-8">
+      <div class="team-member" style="background-image: url('https://valom-html-demo.vercel.app/assets/img/team/team-1-3.jpg');">
+        <div class="team-content">
+          <h5>John Doe</h5>
+          <span>Founder Envato</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-1-8">
+      <div class="team-member" style="background-image: url('https://valom-html-demo.vercel.app/assets/img/team/team-1-2.jpg');">
+        <div class="team-content">
+          <h5>Joanna Smith</h5>
+          <span>VP Design Apple</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-1-8">
+      <div class="team-member" style="background-image: url('https://valom-html-demo.vercel.app/assets/img/team/team-1-1.jpg');">
+        <div class="team-content">
+          <h5>Luis Gallop</h5>
+          <span>Head Engineering Dell</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-1-8">
+      <div class="team-member" style="background-image: url('https://img.freepik.com/free-photo/businesswoman-with-glasses-crossed-arms_1098-3347.jpg?ga=GA1.1.494188671.1741346560&semt=ais_hybrid&w=740');">
+        <div class="team-content">
+          <h5>Katie Stricker</h5>
+          <span>Co-founder Blackbox</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-1-8">
+      <div class="team-member" style="background-image: url('https://valom-html-demo.vercel.app/assets/img/team/team-page-1-1.jpg');">
+        <div class="team-content">
+          <h5>Espen Brunberg</h5>
+          <span>Web Technologist</span>
+        </div>
+      </div>
+    </div>
+     <div class="col-1-8">
+      <div class="team-member" style="background-image: url('https://img.freepik.com/free-photo/close-up-photo-young-successful-business-man-black-suit_171337-9509.jpg?ga=GA1.1.494188671.1741346560&semt=ais_hybrid&w=740');">
+        <div class="team-content">
+          <h5>Kevin Chase</h5>
+          <span>Chairman Tesla</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-1-8">
+      <div class="team-member" style="background-image: url('https://img.freepik.com/free-photo/amazing-cheerful-business-woman-standing-with-arms-crossed_171337-8487.jpg?ga=GA1.1.494188671.1741346560&semt=ais_hybrid&w=740');">
+        <div class="team-content">
+          <h5>Piera Mcclure</h5>
+          <span>Creative Director Slack</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-1-8">
+      <div class="team-member" style="background-image: url('https://img.freepik.com/free-photo/portrait-handsome-businessman-standing-crossed-hands-isolated-gray-wall_231208-2616.jpg?ga=GA1.1.494188671.1741346560&semt=ais_hybrid&w=740');">
+        <div class="team-content">
+          <h5>Robin Johnson</h5>
+          <span>VP Design Microsoft</span>
+        </div>
+      </div>
+    </div>
+    <!-- Add more blocks as needed -->
+  </div>
+</div>
+
+
+  <script>
+    // Smooth parallax scrolling
+    const hero = document.getElementById('hero');
+
+    window.addEventListener('scroll', function () {
+      let offset = window.pageYOffset;
+      hero.style.backgroundPositionY = offset * 0.5 + "px";
+    });
+
+
+  </script>
+
+</body>
+</html>
+
+
+
