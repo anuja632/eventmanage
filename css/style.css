@@ -160,7 +160,7 @@ padding: 0 !important;
     /* Position the fixed images around the center */
     .img1 { top: 10%; left: 5%; transform: translateX(-50%); }
     .img2 { top: 35%; right: -35px; transform: translateY(-50%); }
-    .img3 { bottom: -15px; left: 50%; transform: translateX(-50%); }
+    .img3 { bottom: -35px; left: 50%; transform: translateX(-50%); }
 
     @keyframes rotate {
       0% { transform: rotate(0deg); }
@@ -565,6 +565,224 @@ p, li{
   background-color: #062665;
   color:#fff;
 }
+
+    .section-heading {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .section-heading p {
+      color: #062665;
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 14px;
+      margin: 0;
+    }
+
+    .section-heading h1 {
+      font-size: 32px;
+      color:#062665;
+    }
+
+    .section-heading span {
+      color: #062665;
+    }
+
+    .tab-button {
+      width: 100%;
+      background: none;
+      border: none;
+      color:black;
+      font-size: 1.3rem;
+      text-align: left;
+      padding: 14px 0;
+      border-bottom: 1px solid black;
+      transition: 0.3s;
+    }
+
+    .tab-button.active {
+      color: #062665;
+      border-bottom: 1px solid #062665;
+      font-weight: bold;
+    }
+
+    .tab-content-box {
+      padding: 15px 0 20px;
+      color: black;
+    }
+
+    .tab-content-box:not(.active) {
+      display: none;
+    }
+
+
+.event-hero-wrapper {
+  position: relative;
+  background: url('https://acmatechexpo.in/wp-content/uploads/2024/09/154299.jpg') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Full-screen dark overlay */
+.event-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.event-hero-box {
+  background: rgba(0, 0, 0, 0.7); /* Dark transparent overlay */
+  color: #fff;
+  height: auto;
+  width: 100%;
+  max-width: 700px; /* Gives better text readability on wide screens */
+  border-radius: 20px;
+  padding: 2rem; /* Added back for inner spacing */
+  /* text-align: center; */
+    z-index: 2;
+
+}
+
+
+    .event-hero-box h1 {
+      font-size: 2rem;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+
+    .event-highlight {
+      color: #00f0b5;
+      font-weight: bold;
+    }
+
+    .event-hero-box p {
+      margin-top: 1rem;
+      color: #ccc;
+    }
+
+    .event-btn-custom {
+      margin-top: 1.5rem;
+      background-color: #D92234;
+
+      color: white;
+      padding: 10px 24px;
+      font-weight: 600;
+      border: none;
+      border-radius: 30px;
+      transition: 0.3s ease;
+      display: inline-block;
+    }
+
+
+
+    .event-whatsapp-icon {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 55px;
+      height: 55px;
+      z-index: 999;
+    }
+
+.custom-hero-left {
+  position: relative;
+  background: url('https://acmatechexpo.in/wp-content/uploads/2024/08/rear-view-of-audience-in-the-conference-hall-or-seminar-meeting-which-have-speakers-on-the-stage-e1700247411603-1.jpg') no-repeat center center/cover;
+  height: 100vh;
+  color: #fff;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+/* Dark overlay */
+.custom-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.65);
+  z-index: 1;
+}
+
+/* Content container */
+.custom-hero-content-left {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.custom-hero-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.custom-hero-subtitle {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-top: 1rem;
+}
+
+.custom-hero-btn {
+  margin-top: 2rem;
+  background-color: #D92234;
+  color: white;
+  padding: 12px 28px;
+  font-weight: 600;
+  border-radius: 30px;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+
+
+
+.custom-image-wrapper {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.custom-left-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.custom-text-content {
+  padding-left: 1.5rem;
+}
+
+.custom-section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+.custom-contact-btn {
+  background-color: #D92234;
+  color: white;
+  padding: 10px 24px;
+  font-weight: 600;
+  border-radius: 30px;
+  text-decoration: none;
+  border: none;
+  transition: 0.3s ease;
+}
+
+
+
 /* 
 .feature-box:hover .icon-circle i {
   color: white;
@@ -646,11 +864,11 @@ p, li{
   transition: 0.3s ease;
 }
 
-.theme-btn:hover {
+/* .theme-btn:hover {
   background: #D92234;
   color: #002855;
   border-color: #D92234;
-}
+} */
 
 /* EVENT HOVER */
 .event-item:hover {
@@ -1282,7 +1500,7 @@ p, li{
 
     .team-content h5 {
       font-weight: bold;
-      color: #ff2d55;
+      color: #D92234;
       margin: 0;
     }
 
@@ -1429,6 +1647,45 @@ input, textarea {
   margin-right: 8px;
 }
 
+#bb{
+margin-top: 35%;
+}
+.vertical-text {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #062665; /* Match your green style */
+  position: absolute;
+  left: -60px; /* adjust as needed */
+  top: 50%;
+  transform: translateY(-50%) rotate(180deg);
+  white-space: nowrap;
+  letter-spacing: 1px;
+}
+
+.feature-card {
+  background: #ffffff;
+  transition: transform 0.2s;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.pq{
+  color:#062665
+}
+.icon-wrapper {
+  width: 60px;
+  height: 60px;
+  background: #e0f7fa;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
 
     @media (max-width: 992px) {
       .col-1-8 {
@@ -1473,6 +1730,16 @@ input, textarea {
   .team10-section-area {
     padding: 60px 0;
   }
+  .custom-hero-left {
+    position: relative;
+    background: url(https://acmatechexpo.in/wp-content/uploads/2024/08/rear-view-of-audience-in-the-conference-hall-or-seminar-meeting-which-have-speakers-on-the-stage-e1700247411603-1.jpg) no-repeat center center / cover;
+    height: 75vh;
+    color: #fff;
+    overflow: hidden;
+    display: flex
+;
+    align-items: center;
+}
 }
 
 
@@ -1578,6 +1845,16 @@ input, textarea {
             margin-left: 20px;
 
   }
+      .custom-hero-left {
+        position: relative;
+        background: url(https://acmatechexpo.in/wp-content/uploads/2024/08/rear-view-of-audience-in-the-conference-hall-or-seminar-meeting-which-have-speakers-on-the-stage-e1700247411603-1.jpg) no-repeat center center / cover;
+        height: 89vh;
+        color: #fff;
+        overflow: hidden;
+        display: flex
+;
+        align-items: center;
+    }
 
   .main-image {
     width: 180px;
@@ -1634,16 +1911,23 @@ input, textarea {
   footer .text-center {
     text-align: left !important;
   }
+          #bb {
+        margin-top: 0% !important;
+    }
+
 }
-/* @media (max-width:768px){
+@media (max-width: 912px) {
+  .show-desktop-only {
+    display: none !important;
+  }
+}
 
-.logo-container img {
-    object-fit: cover;
-        width: 750px;
+@media (max-width:540px){
+        #bb {
+        margin-top: 0% !important;
+    }
 
-    border-radius: 8px;
-    transition: transform 0.3s ease, filter 0.3s ease;
-}} */
+}
 @media (max-width:767px){
 
     .feature-one__single {
@@ -1684,6 +1968,19 @@ input, textarea {
     flex-wrap: wrap;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     flex-direction: column;
+}
+        #bb {
+        margin-top: 0% !important;
+    }
+    .about-section{
+      padding: 0px !important;
+    }
+        ul {
+        padding-left: 1rem !important;
+    }
+    .custom-text-content {
+    padding-left: 0rem;
+    margin-top:10px;
 }
 }
 /* iPads and Android Tablets */
@@ -1726,6 +2023,13 @@ input, textarea {
     }
     li {
   font-size: 15px;
+}
+.custom-hero-left {
+    position: relative;
+    background: url(https://acmatechexpo.in/wp-content/uploads/2024/08/rear-view-of-audience-in-the-conference-hall-or-seminar-meeting-which-have-speakers-on-the-stage-e1700247411603-1.jpg) no-repeat center center / cover;
+    height: 75vh;
+    color: #fff;
+    overflow: hidden;
 }
 }
 @media (min-width: 768px) and (max-width: 915px) {
@@ -1829,7 +2133,23 @@ input, textarea {
     .main {
         background-color: #062665 !important;
         position: relative;
-        height: 90vh !important;
+        height: 95vh !important;
+    }
+            #bb {
+        margin-top: 0% !important;
+    }
+}
+@media (min-width: 768px) {
+  #aa{
+    margin-top: 0px !important;
+  }
+    .main {
+        background-color: #062665 !important;
+        position: relative;
+        height: 80vh !important;
+    }
+        #bb {
+        margin-top: 0% !important;
     }
 }
 
@@ -1849,6 +2169,9 @@ input, textarea {
 
 
 @media (max-width:1080px){
+  #bb {
+    margin-top: 50%;
+}
     .hero-section {
     padding: 20px;
 }
@@ -1920,6 +2243,10 @@ li {
   font-size: 16px;
   text-align: justify;
 }
+.navbar-nav .nav-link {
+    color: #000;
+    margin: 0px 4px;
+}
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -1944,12 +2271,32 @@ li {
         display: none;
     }}
     
+ @media (max-width:500px){
+    .main {
+        background-color: #062665 !important;
+        position: relative;
+        height: 90vh;
+    }
+  }
 
-
+@media (max-width:390px){
+      .main {
+        background-color: #062665 !important;
+        position: relative;
+        height: 100vh !important;
+    }
+  
+}
  @media (max-width:360px){
 #aa{
   margin-top: 0px;
 }
+    /* #bb {
+        margin-top: 395%;
+    } */
+             #bb {
+        margin-top: 0% !important;
+    }
 
 .main {
     background-color: #062665 !important;

@@ -72,3 +72,12 @@
   }
 
   window.onload = () => setActiveStep(1);
+
+
+  function showTab(tabId, clickedBtn) {
+      document.querySelectorAll(".tab-button").forEach(btn => btn.classList.remove("active"));
+      document.querySelectorAll(".tab-content-box").forEach(tab => tab.classList.remove("active"));
+
+      clickedBtn.classList.add("active");
+      document.getElementById(tabId).classList.add("active");
+    }
