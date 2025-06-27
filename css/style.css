@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&family=Raleway&family=Nunito&family=Merriweather&family=Playfair+Display&family=Libre+Baskerville&family=Roboto&family=Open+Sans&family=Lato&family=Noto+Sans&family=Pacifico&family=Dancing+Script&family=Satisfy&family=Great+Vibes&family=Shadows+Into+Light&family=Lobster&family=Bebas+Neue&family=Anton&family=Fredoka+One&family=Cinzel&family=Fira+Code&family=Source+Code+Pro&family=IBM+Plex+Mono&family=Inconsolata&display=swap');
 
    html, body {
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     width: 100%;
-    margin: 0;
-padding: 0;
+    margin: 0 !important;
+padding: 0 !important;
  background-color: #FFF3F6;
  font-family: 'Merriweather', serif;
        /* background-color: white; */
@@ -1311,9 +1311,13 @@ p, li{
       position: relative;
       height: 80vh;
       overflow: hidden;
+            background-image: url('https://valom-html-demo.vercel.app/assets/img/hero/hero-bg1-3.png');
+      background-size: cover;
+      background-position: center;
+      z-index: 0;
     }
 
-    .parallax-bg {
+    /* .parallax-bg {
       position: absolute;
       top: -150%;
       left: 0;
@@ -1325,7 +1329,7 @@ p, li{
       z-index: 0;
       will-change: transform;
       transition: transform 0.1s linear;
-    }
+    } */
 
     .parallax-content {
       position: relative;
@@ -1357,6 +1361,8 @@ p, li{
   background: white;
   border-radius: 16px;
   overflow: hidden;
+    flex-wrap: wrap;
+
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -1581,7 +1587,63 @@ input, textarea {
     width: 50px;
     height: 50px;
   }
+  .parallax-section {
+    position: relative;
+    height: 50vh;
+    overflow: hidden;
+    background-image: url(https://valom-html-demo.vercel.app/assets/img/hero/hero-bg1-3.png);
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
 }
+.parallax-content {
+    position: relative;
+    z-index: 1;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+   .parallax-content p {
+    font-size: 1rem;
+    max-width: 600px;
+    padding: 10px;
+}
+.parallax-content h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+#aa{
+  margin-top: 20px;
+}
+.main {
+    background-color: #062665 !important;
+    position: relative;
+    height: 110vh;
+}
+.img5 img {
+    width: 100%;
+    height: 450px;
+    transition: transform 0.3s ease;
+    object-fit: cover;
+}
+  footer .text-center {
+    text-align: left !important;
+  }
+}
+/* @media (max-width:768px){
+
+.logo-container img {
+    object-fit: cover;
+        width: 750px;
+
+    border-radius: 8px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}} */
 @media (max-width:767px){
 
     .feature-one__single {
@@ -1611,9 +1673,21 @@ input, textarea {
   .event-item .content h4 {
     font-size: 20px;
   }
+  .contact-wrapper {
+    display: flex
+;
+    max-width: 1000px;
+    margin: 50px auto;
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+}
 }
 /* iPads and Android Tablets */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1025px) {
   .about-main-wrapper {
     width: 350px;
     height: 350px;
@@ -1649,6 +1723,113 @@ input, textarea {
 
     .feature-one__single-shape-1 {
         display: none;
+    }
+    li {
+  font-size: 15px;
+}
+}
+@media (min-width: 768px) and (max-width: 915px) {
+  footer .col-md-6 {
+    width: 50%;
+    float: left;
+    margin-bottom: 1rem;
+
+  }
+  .hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: white;
+    text-align: center;
+}
+  .hero {
+    position: relative;
+    height: 70vh;
+    background-image: url(https://img.freepik.com/premium-photo/speaker-speaking-front-audience_1178606-16452.jpg?ga=GA1.1.494188671.1741346560&semt=ais_hybrid&w=740);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding-top: 80px;
+}
+      .hero-section {
+        text-align: center;
+      }
+.main {
+    background-color: #062665 !important;
+    position: relative;
+    height: 60vh !important;
+}
+
+  footer .text-center {
+    text-align: left !important;
+        /* text-align: start; */
+
+  }
+  #aa{
+    margin-top: 50px !important;
+  }
+
+  footer .d-flex.justify-content-center {
+    justify-content: flex-start !important;
+  }
+
+  footer .row.row-cols-3 > .col {
+    flex: 0 0 auto;
+    width: 33.3333%;
+  }
+    .circle-container {
+    width: 300px;
+    height: 300px;
+            margin-left: 20px;
+
+  }
+    .parallax-section {
+    position: relative;
+    height: 50vh;
+    overflow: hidden;
+    background-image: url(https://valom-html-demo.vercel.app/assets/img/hero/hero-bg1-3.png);
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+.parallax-content {
+    position: relative;
+    z-index: 1;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+#ap{
+  font-size: 18px !important;
+  /* text-align: justify; */
+}
+
+  .main-image {
+    width: 180px;
+    height: 180px;
+  }
+    .orbit-image {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media (min-width: 885px) {
+  #aa{
+    margin-top: 0px !important;
+  }
+    .main {
+        background-color: #062665 !important;
+        position: relative;
+        height: 90vh !important;
     }
 }
 
@@ -1708,6 +1889,37 @@ li {
     transition: transform 0.3s ease;
     object-fit: cover;
 }
+.event-item .content .blog-meta {
+    margin-bottom: 18px;
+    display: flex
+;
+    flex-wrap: wrap;
+    gap: 2%;
+    font-size: 16px;
+    color: #5E5E5E;
+    list-style: none;
+}
+.event-item {
+    background: #ffffff;
+    color: #3E3E3E;
+    padding: 30px 20px;
+    transition: 0.5s;
+    display: flex
+;
+    align-items: center;
+    gap: 35px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+ ul {
+    padding-left: 0rem;
+}
+#ap{
+  font-size: 16px;
+  text-align: justify;
+}
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -1735,11 +1947,49 @@ li {
 
 
  @media (max-width:360px){
+#aa{
+  margin-top: 0px;
+}
 
+.main {
+    background-color: #062665 !important;
+    position: relative;
+    height: 100vh
+;
+}
+    .about-section {
+        background: #ffffff;
+        color: #212529;
+        padding:  20px;
+    }
+    .img5 img {
+    width: 100%;
+    height: 350px;
+    transition: transform 0.3s ease;
+    object-fit: cover;
+}
+.logo-container {
+    flex: 0 0 300px;
+    margin: 6px 6px;
+    position: relative;
+}
    .logo-container img {
        object-fit: cover;
        border-radius: 8px;
        transition: transform 0.3s ease, filter 0.3s ease;
        width: 350px;
    }
+   .parallax-content p {
+    font-size: 1rem;
+    max-width: 600px;
+    padding: 10px;
+}
+.parallax-content h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+  footer .text-center {
+    text-align: left !important;
+  }
+
  }   
