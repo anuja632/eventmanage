@@ -52,7 +52,9 @@ padding: 0 !important;
 #aa{
   margin-top: 100px;
 }
-
+.badge{
+  font-size: 20px;
+}
 
     .social-icons a {
       color:  #000;
@@ -168,7 +170,7 @@ padding: 0 !important;
     }
   .about-section {
     background:#FFF3F6;
-    padding: 60px 60px 0px 0px;
+    padding: 0px 60px 0px 0px;
   }
 
   .about-btn {
@@ -448,7 +450,7 @@ p, li{
 .feature-one__count {
   position: absolute;
   top: 20px;
-  left: -56px;
+  left: -59px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -462,7 +464,7 @@ p, li{
 /* Optional: make count number white */
 .feature-one__count:before {
   position: relative;
-  font-size: 60px;
+  font-size: 75px;
   line-height: 70px;
   font-weight: 600;
   counter-increment: count;
@@ -619,7 +621,7 @@ p, li{
 .event-hero-wrapper {
   position: relative;
   background: url('https://acmatechexpo.in/wp-content/uploads/2024/09/154299.jpg') no-repeat center center/cover;
-  height: 100vh;
+  height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -645,7 +647,7 @@ p, li{
   max-width: 700px; /* Gives better text readability on wide screens */
   border-radius: 20px;
   padding: 2rem; /* Added back for inner spacing */
-  /* text-align: center; */
+  text-align: center;
     z-index: 2;
 
 }
@@ -678,6 +680,10 @@ p, li{
       border-radius: 30px;
       transition: 0.3s ease;
       display: inline-block;
+
+    }
+    a{
+      text-decoration: none;
     }
 
 
@@ -694,14 +700,14 @@ p, li{
 .custom-hero-left {
   position: relative;
   background: url('https://acmatechexpo.in/wp-content/uploads/2024/08/rear-view-of-audience-in-the-conference-hall-or-seminar-meeting-which-have-speakers-on-the-stage-e1700247411603-1.jpg') no-repeat center center/cover;
-  height: 100vh;
+  height: 90vh;
   color: #fff;
   overflow: hidden;
   display: flex;
   align-items: center;
+  justify-content: center; /* Center horizontally */
 }
 
-/* Dark overlay */
 .custom-hero-overlay {
   position: absolute;
   top: 0;
@@ -712,11 +718,10 @@ p, li{
   z-index: 1;
 }
 
-/* Content container */
 .custom-hero-content-left {
   position: relative;
   z-index: 2;
-  text-align: center;
+  text-align: center; /* Center text */
   padding: 2rem 1rem;
 }
 
@@ -746,7 +751,6 @@ p, li{
 
 
 
-
 .custom-image-wrapper {
   border-radius: 16px;
   overflow: hidden;
@@ -755,7 +759,7 @@ p, li{
 
 .custom-left-img {
   width: 100%;
-  height: auto;
+    height: 440px;
   display: block;
 }
 
@@ -894,7 +898,7 @@ p, li{
 }
 /* Core Section */
 .team10-section-area {
-  padding: 100px 0;
+  padding: 10px 0;
   background-color: #f9f9f9;
   position: relative;
 }
@@ -948,7 +952,7 @@ p, li{
 }
 .img6 img {
       width: 100%;
-  height: 630px;
+  height: 650px;
   transition: transform 0.3s ease;
   object-fit: cover;
 } 
@@ -1253,7 +1257,7 @@ p, li{
     }
 
     .goal-section {
-  padding: 60px 0;
+  padding: 20px 0;
   background-color: #fff;
 }
 
@@ -1647,9 +1651,9 @@ input, textarea {
   margin-right: 8px;
 }
 
-#bb{
+/* #bb{
 margin-top: 35%;
-}
+} */
 .vertical-text {
   writing-mode: vertical-rl;
   transform: rotate(180deg);
@@ -1848,7 +1852,7 @@ margin-top: 35%;
       .custom-hero-left {
         position: relative;
         background: url(https://acmatechexpo.in/wp-content/uploads/2024/08/rear-view-of-audience-in-the-conference-hall-or-seminar-meeting-which-have-speakers-on-the-stage-e1700247411603-1.jpg) no-repeat center center / cover;
-        height: 89vh;
+        height: 70vh;
         color: #fff;
         overflow: hidden;
         display: flex
@@ -2019,11 +2023,6 @@ margin-top: 35%;
 #ap{
   margin-top:15px;
 }
-.custom-left-img {
-    width: 100%;
-    height: 600px;
-    display: block;
-
 
   .main-image {
     width: 220px;
@@ -2199,6 +2198,9 @@ margin-top: 35%;
     .hero-section {
     padding: 20px;
 }
+.hide-on-1080 {
+    display: none;
+  }
 .img2 {
     top: 35%;
     right: -9px;
@@ -2301,14 +2303,45 @@ li {
         position: relative;
         height: 90vh;
     }
+        .hero p {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+    padding: 10px;
+}
+.content-section .text {
+    flex: 1 1 50%;
+    background-color: #062665;
+    color: #fff;
+    padding: 19px;
+    display: flex
+;
+    flex-direction: column;
+    justify-content: center;
+}
   }
 
 @media (max-width:390px){
       .main {
         background-color: #062665 !important;
         position: relative;
-        height: 100vh !important;
+        height: 105vh !important;
     }
+    .hero p {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+    padding: 10px;
+}
+.content-section .text {
+    flex: 1 1 50%;
+    background-color: #062665;
+    color: #fff;
+    padding: 19px;
+    display: flex
+;
+    flex-direction: column;
+    justify-content: center;
+}
+    
   
 }
  @media (max-width:360px){
